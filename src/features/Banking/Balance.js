@@ -6,12 +6,16 @@ function Balance({ setIsbalance }) {
 
   return (
     <>
-      <div>
+      <div className="main_container flx-clm">
         <h4>Your Balance is</h4>
         <h5>Rs.{bank}</h5>
       </div>
-
-      <button onClick={() => setIsbalance(false)}>Back</button>
+      <div className="btn_container">
+        <div className="atm_btn">
+          <h4>Back</h4>
+          <button onClick={() => setIsbalance(false)}>Press</button>
+        </div>
+      </div>
     </>
   );
 }

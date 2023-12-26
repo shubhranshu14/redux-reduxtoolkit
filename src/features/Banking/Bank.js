@@ -28,17 +28,22 @@ function Bank() {
         <Balance setIsbalance={setIsbalance} />
       ) : (
         <>
-          <div className="atm_btn">
-            <h4>Deposit</h4>
-            <button onClick={openDeposit}>Press</button>
+          <div className="main_container">
+            <h2>Welcome to your Bank</h2>
           </div>
-          <div className="atm_btn">
-            <h4>Withdraw</h4>
-            <button onClick={openWithdraw}>Press</button>
-          </div>
-          <div className="atm_btn">
-            <h4>Check Balance</h4>
-            <button onClick={openBalance}>Press</button>
+          <div className="btn_container">
+            <div className="atm_btn">
+              <h4>Deposit</h4>
+              <button onClick={openDeposit}>Press</button>
+            </div>
+            <div className="atm_btn">
+              <h4>Withdraw</h4>
+              <button onClick={openWithdraw}>Press</button>
+            </div>
+            <div className="atm_btn">
+              <h4>Check Balance</h4>
+              <button onClick={openBalance}>Press</button>
+            </div>
           </div>
         </>
       )}
